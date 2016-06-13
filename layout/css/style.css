@@ -1,0 +1,21 @@
+/**
+ * Developer for portfolio
+ */
+header .wrap-logo {
+    height: 70px;
+    width: 100%;
+    background-color: #373737;
+}
+
+header nav {
+    height: 70px;
+    width: 100%;
+    background-color: #474747;
+}
+
+header .search {
+    height: 75px;
+    width: 100%;
+    background-color: #ebebeb;
+    padding: 15px 0;
+}
