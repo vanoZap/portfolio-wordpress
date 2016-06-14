@@ -1,0 +1,28 @@
+{
+  "name": "p-wp",
+  "version": "1.0.0",
+  "description": "site on wordpress for portfolio",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-sass": "^2.3.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanoZap/portfolio-wordpress.git"
+  },
+  "keywords": [
+    "p-wp"
+  ],
+  "author": "vano_zap",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vanoZap/portfolio-wordpress/issues"
+  },
+  "homepage": "https://github.com/vanoZap/portfolio-wordpress#readme"
+}

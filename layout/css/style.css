@@ -2,20 +2,55 @@
  * Developer for portfolio
  */
 header .wrap-logo {
+  height: 70px;
+  width: 100%;
+  background-color: #373737;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0; }
+  header .wrap-logo .logo {
+    width: 70px;
     height: 70px;
-    width: 100%;
-    background-color: #373737;
-}
+    margin-left: 5%;
+    background: #f26c4f url("../img/logo_50x50_wite.png") center center no-repeat;
+    position: relative;
+    display: inline-block; }
+    header .wrap-logo .logo:after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 12.5px 0 12.5px 15px;
+      border-color: transparent transparent transparent #f26d4f;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: -15px;
+      margin: auto; }
+  header .wrap-logo h3 {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0 auto 30px;
+    color: #ffffff;
+    line-height: 70px; }
+  header .wrap-logo .dropdown {
+    float: right; }
 
 header nav {
-    height: 70px;
-    width: 100%;
-    background-color: #474747;
-}
+  height: 70px;
+  width: 100%;
+  background-color: #474747;
+  position: absolute;
+  top: 70px;
+  right: 0;
+  left: 5%; }
 
 header .search {
-    height: 75px;
-    width: 100%;
-    background-color: #ebebeb;
-    padding: 15px 0;
-}
+  height: 75px;
+  width: 100%;
+  background-color: #ebebeb;
+  padding: 15px 0; }
