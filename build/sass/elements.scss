@@ -1,0 +1,44 @@
+/* 
+ * Elements
+ */
+@import "variables";
+@import "mixins";
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    
+    > i {
+        position: absolute;
+        left: 16px;
+        top: 0;
+        bottom: 0;
+        color: $color-red;
+        
+        @include flex();
+        @include flex-v-align(center);
+    }
+    
+    button {
+        height: $input-element;
+        border-radius: 0;
+        background-color: $color-light;
+        padding-left: 40px; 
+        padding-right: 60px;
+        
+        i {
+            position: absolute;
+            top: 1px;
+            right: 1px;
+            bottom: 1px;
+            width: 35px;
+            background-color: $color-light-grey;
+            border-left: 1px solid $color-grey-border;
+            
+            @include flex();
+            @include flex-v-align(center);
+            @include flex-h-align(center);
+        }
+    }
+}
+

@@ -1,6 +1,12 @@
 /**
  * Developer for portfolio
  */
+
+@import "variables";
+
+/*
+ * Header
+ */
 header {
 	.wrap-logo {
 		height: 70px;
@@ -41,7 +47,7 @@ header {
             top: 0;
             bottom: 0;
             margin: auto 0 auto 30px;
-            color: #ffffff;
+            color: $color-light;
             line-height: 70px;
         }
         
@@ -53,7 +59,7 @@ header {
 	nav {
 		height: 70px;
 		width: 100%;
-		background-color: #474747;
+		background-color: $color-grey;
         position: absolute;
 		top: 70px;
         right: 0;
