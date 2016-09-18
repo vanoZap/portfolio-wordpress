@@ -3,24 +3,33 @@
  */
 
 @import "variables";
+@import "mixins";
+@import "elements";
 
+body {
+    overflow-x: hidden;
+}
 /*
  * Header
  */
 header {
 	.wrap-logo {
-		height: 70px;
-		width: 100%;
-		background-color: #373737;
-		position: absolute;
-        top: 0;
-		left: 0;
-		right: 0;
+        height: 70px;
+        width: 100%;
+        .bg {
+            height: 70px;
+            width: 100%;
+            background-color: #373737;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+        }
         
         .logo {
             width: 70px;
             height: 70px;
-            margin-left: 5%;
             background: #f26c4f url('../img/logo_50x50_wite.png') center center no-repeat;
             position: relative;
             display: inline-block;
@@ -45,7 +54,6 @@ header {
             display: inline-block;
             position: absolute;
             top: 0;
-            bottom: 0;
             margin: auto 0 auto 30px;
             color: $color-light;
             line-height: 70px;
@@ -53,23 +61,66 @@ header {
         
         .dropdown {
             float: right;
+            margin-top: 17px;
+            margin-left: 20px;
         }
 	}
 
 	nav {
 		height: 70px;
 		width: 100%;
-		background-color: $color-grey;
-        position: absolute;
-		top: 70px;
-        right: 0;
-        left: 5%;
+        position: relative;
+        .bg {
+            height: 70px;
+            width: 1000%;
+            background-color: $color-grey;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        
+        .nav {
+            color: $color-light;
+            margin-left: 70px;
+            margin-top: 25px;
+            
+            li {
+                padding: 0 20px;
+                border-right: 1px solid $text-grey;
+            }
+            
+            li:first-child {
+                padding-left: 0;
+            }
+            
+            li:last-child {
+                padding-right: 0;
+                border-right: none;
+            }
+        }
+        
+        .quik-links {
+            float: right;
+            margin-top: 22px;
+            span {
+                color: $color-light;
+            }
+            
+            > * {
+                display: inline-block;
+            }
+            
+            .dropdown {
+                margin-left: 20px;
+            }
+        }
 	}
 
 	.search {
 		height: 75px;
 		width: 100%;
-		background-color: #ebebeb;
+		background-color: $color-light-grey;
 		padding: 15px 0;
 	}
 }

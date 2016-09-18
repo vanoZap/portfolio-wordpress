@@ -1,8 +1,6 @@
 /* 
  * Elements
  */
-@import "variables";
-@import "mixins";
 
 /* Dropdown */
 .dropdown {
@@ -38,6 +36,43 @@
             @include flex();
             @include flex-v-align(center);
             @include flex-h-align(center);
+        }
+    }
+}
+
+.dropdown.dark{
+    
+    > i {
+        color: $color-light;
+    }
+    
+    button {
+        border-left: 1px solid $text-grey;
+        border-right: 1px solid $text-grey;
+        border-top: none;
+        border-bottom: none;
+        color: $color-light!important;
+        background: transparent!important;
+        outline: none;
+        height: 26px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+    
+        i {
+            color: $color-light;
+            background: transparent;
+            border-left: none;
+        }
+    }
+    
+    button:focus,
+    button:active{
+        color: $text-grey!important;
+        background: transparent;
+        outline: none;
+        
+        i {
+            color: $text-grey;
         }
     }
 }
